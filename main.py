@@ -4,8 +4,7 @@ from fastapi.responses import JSONResponse
 from os import system
 
 def run():
-    while True:
-        system('python tele_enc.py')
+    system('python tele_enc.py')
 Thread(target=run).start()
 
 app = FastAPI()
