@@ -14,6 +14,7 @@ def run():
         end_time = datetime.combine(now_vn.date(), time(4, 0), tzinfo=tz_vn)
         if start_time <= now_vn <= end_time:
             system('python tele_enc.py')
+            sleep(20 * 3600)
         sleep(3600)
 Thread(target=run).start()
 
