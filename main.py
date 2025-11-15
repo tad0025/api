@@ -42,7 +42,8 @@ def run():
 
             Thread(target=render).start()
             sleep(300)
-        except: pass
+        except Exception as e:
+            print(e)
     
 Thread(target=run).start()
 
